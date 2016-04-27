@@ -82,6 +82,47 @@ height: 100%;
 	transform: translate(-50%, -50%);
 }
 
+
+
+/*Page 5 Styling*/
+
+.title5container{
+	width: 85%;
+	margin: 60px auto 0 auto;
+
+	.first-title{
+		float: left;
+		display: inline-block;
+		svg{
+			height: 20px;
+		}
+	}
+
+	.line-title{
+		display: inline-block;
+		width: 15px;
+		margin: 0 auto;
+		svg{
+			max-height: 40px;
+			margin-top: -10px;
+
+		}
+	}
+	.second-title{
+		float: right;
+		display: inline-block;
+		svg{
+			height: 20px;
+		}
+	}
+}
+
+
+
+
+
+
+
 svg {
 	visibility:hidden;
 

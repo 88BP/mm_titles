@@ -5807,6 +5807,28 @@ body {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%); }
 
+/*Page 5 Styling*/
+.title5container {
+  width: 85%;
+  margin: 60px auto 0 auto; }
+  .title5container .first-title {
+    float: left;
+    display: inline-block; }
+    .title5container .first-title svg {
+      height: 20px; }
+  .title5container .line-title {
+    display: inline-block;
+    width: 15px;
+    margin: 0 auto; }
+    .title5container .line-title svg {
+      max-height: 40px;
+      margin-top: -10px; }
+  .title5container .second-title {
+    float: right;
+    display: inline-block; }
+    .title5container .second-title svg {
+      height: 20px; }
+
 svg {
   visibility: hidden; }
   svg .logo-stroke {
