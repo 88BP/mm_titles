@@ -12,7 +12,7 @@ var tl = new TimelineMax(
 	{repeat: -1, repeatDelay: 2, yoyo: true});
 
 tl.to(".nothing-stroke", 2, {drawSVG:0, delay: 2});
-tl.from(".exactly-stroke", 2, {drawSVG:0}, '-=.7');
+tl.from(".exactly-stroke", 2, {drawSVG:0}, '-=.5');
 tl.to(".exactly-stroke", 2, {drawSVG:0, delay: 2});
-tl.to(".nothing-stroke", 2, {drawSVG:"100%"}, '-=.7');
+tl.to(".nothing-stroke", 2, {drawSVG:"100%"}, '-=.5');
 

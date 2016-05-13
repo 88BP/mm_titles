@@ -10072,9 +10072,9 @@ var tl = new TimelineMax(
 	{repeat: -1, repeatDelay: 2, yoyo: true});
 
 tl.to(".nothing-stroke", 2, {drawSVG:0, delay: 2});
-tl.from(".exactly-stroke", 2, {drawSVG:0}, '-=.7');
+tl.from(".exactly-stroke", 2, {drawSVG:0}, '-=.5');
 tl.to(".exactly-stroke", 2, {drawSVG:0, delay: 2});
-tl.to(".nothing-stroke", 2, {drawSVG:"100%"}, '-=.7');
+tl.to(".nothing-stroke", 2, {drawSVG:"100%"}, '-=.5');
 
 
 console.log('main.js');
@@ -10119,3 +10119,47 @@ TweenMax.to("#nothing-n2", 2, {morphSVG:"#exactly-l", delay:1.8, ease:Power2.eas
 TweenMax.to("#nothing-g", 2, {morphSVG:"#exactly-y", delay:1.2, ease:Power2.easeInOut, repeat: -1, repeatDelay: 1.25, yoyo: true});
 
 TweenMax.set('svg',{css:{visibility:'visible'}});
+
+TweenMax.from("#title-line", .5, {y:"100%", delay:1, ease: Power2.easeOut});
+TweenMax.from("#title-first", 1.5, {x:"100%", delay:2, ease: Power2.easeOut});
+TweenMax.from("#title-second", 1.5, {x:"-100%", delay:3.75, ease: Power2.easeOut});
+TweenMax.to(".logocontainer", 1.5, {opacity: "1", delay: 5.5});
+
+TweenMax.set('svg',{css:{visibility:'visible'}});
+
+var tl = new TimelineMax(
+	{repeat: -1, repeatDelay: 3, yoyo: true});
+
+tl.to(".nothing-text", 2, {drawSVG:0, delay: 3});
+tl.from(".exactly-text", 2, {drawSVG:0});
+tl.to(".exactly-text", 2, {drawSVG:0, delay: 3});
+tl.to(".nothing-text", 2, {drawSVG:"100%"});
+
+TweenMax.set('svg',{css:{visibility:'visible'}});
+
+var tl = new TimelineMax(
+	{repeat: -1, repeatDelay: 3, yoyo: true});
+
+tl.to(".nothing-text", 2, {drawSVG:0, delay: 3});
+tl.from(".exactly-text", 2, {drawSVG:0});
+tl.to(".exactly-text", 2, {drawSVG:0, delay: 3});
+tl.to(".nothing-text", 2, {drawSVG:"100%"});
+TweenMax.set('svg',{css:{visibility:'visible'}});
+
+TweenMax.from("#title-line", .5, {y:"100%", delay:1, ease: Power2.easeOut});
+TweenMax.from("#title-first", 1.5, {x:"100%", delay:2, ease: Power2.easeOut});
+TweenMax.from("#title-second", 1.5, {x:"-100%", delay:3.75, ease: Power2.easeOut});
+TweenMax.to(".logocontainer", 1.5, {opacity: "1", delay: 5.5});
+
+var tl = new TimelineMax(
+	{delay: 6.5, repeat: -1, repeatDelay: .4});
+
+tl.to(".nothing-color", 1.2, {fill: '#b02a4d'})
+	.to(".nothing-color", 1.2, {fill: '#FFFFFF'}, '+=1.5')
+	.to(".exactly-color", 1.2, {fill: '#F8A11E'}, '+=0.4')
+	.to(".exactly-color", 1.2, {fill: '#FFFFFF'}, '+=1.5');
+
+
+
+
+

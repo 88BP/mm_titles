@@ -5761,16 +5761,15 @@ button.close {
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/scaffolding";
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/type";
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/grid";*/
-video#homeVid {
-  position: absolute;
+video#bgvid {
+  position: fixed;
   top: 50%;
-  left: 50%;
-  width: 600%;
-  /*min-width: 100%;
-    min-height: 100%;*/
+  left: 44%;
+  min-width: 100%;
+  min-height: 100%;
   width: auto;
   height: auto;
-  z-index: -100;
+  z-index: 10;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%); }
 
@@ -5779,8 +5778,8 @@ video#homeVid {
   padding: 0; }
 
 html, body {
-  /*height: 100%;*/
-  background: url("../img/adriana.jpg") no-repeat center center fixed;
+  /*background: url("../img/sideface.jpg") no-repeat center center fixed; */
+  background-size: cover;
   height: 100%; }
 
 body {
@@ -5800,34 +5799,75 @@ body {
     margin-left: 25px; }
 
 .titlecontainer {
-  width: 70%;
+  width: 80%;
   position: absolute;
   top: 50%;
   left: 50%;
+  z-index: 100;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%); }
 
+.title7container {
+  width: 50%;
+  position: absolute;
+  top: 45%;
+  left: 30%;
+  z-index: 100;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+
+.logocontainer {
+  width: 25%;
+  position: fixed;
+  bottom: 30px;
+  right: 75px;
+  opacity: 0; }
+
 /*Page 5 Styling*/
 .title5container {
-  width: 85%;
-  margin: 60px auto 0 auto; }
-  .title5container .first-title {
+  width: 90%;
+  position: absolute;
+  display: block;
+  margin: 60px auto 0 auto;
+  left: 5%;
+  z-index: 100;
+  /*#title-first{
+		margin-right: 5px;
+	}*/ }
+  .title5container #title-first-wrapper, .title5container #title-second-wrapper {
+    width: 50%;
     float: left;
-    display: inline-block; }
-    .title5container .first-title svg {
-      height: 20px; }
-  .title5container .line-title {
-    display: inline-block;
-    width: 15px;
+    overflow: hidden;
     margin: 0 auto; }
-    .title5container .line-title svg {
-      max-height: 40px;
-      margin-top: -10px; }
-  .title5container .second-title {
-    float: right;
-    display: inline-block; }
-    .title5container .second-title svg {
-      height: 20px; }
+  .title5container #title-first, .title5container #title-second {
+    width: 100%;
+    display: block;
+    margin-top: 12px; }
+    .title5container #title-first svg, .title5container #title-second svg {
+      width: 100%;
+      height: auto;
+      margin: 0 auto;
+      fill: white; }
+  .title5container #title-first {
+    margin-right: -5px;
+    padding: 0 30px 0 0; }
+  .title5container #title-second {
+    /*margin-left: -3px;*/
+    padding: 0 0 0 30px; }
+  .title5container #title-line-wrapper {
+    display: block;
+    position: absolute;
+    width: 5px;
+    right: 50%;
+    margin-right: -3px;
+    overflow: hidden;
+    /*height: 100%;*/ }
+  .title5container #title-line {
+    width: 4px;
+    height: auto;
+    /*height: 100%;*/ }
+    .title5container #title-line svg {
+      height: 100%; }
 
 svg {
   visibility: hidden; }
@@ -5836,9 +5876,13 @@ svg {
     stroke-width: 2;
     fill: none; }
   svg .exactly-stroke {
-    stroke: #A8216B;
+    stroke: white;
     stroke-width: 2;
     fill: none;
     padding-top: 200px; }
+  svg .exactly-text {
+    stroke: #A8216B;
+    stroke-width: 2;
+    fill: none; }
 
 /*# sourceMappingURL=main.css.map */
